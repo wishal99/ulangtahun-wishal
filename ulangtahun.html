@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ucapan Ulang Tahun</title>
+</head>
+<body style="text-align:center; padding-top: 100px;">
+  <h1>Selamat Ulang Tahun, Wishal!</h1>
+  <p>Semoga selalu sehat, bahagia, dan lulus cumlaude!</p>
+
+  <a href="#" onclick="ucapkan()" style="font-size: 20px; color: blue; text-decoration: underline;">
+    Klik di sini untuk mendengar ucapan
+  </a>
+
+  <script>
+    function ucapkan() {
+      var ucapan = new SpeechSynthesisUtterance("Selamat ulang tahun, Wishal! Semoga semua harapanmu tercapai.");
+      ucapan.lang = 'id-ID'; // Bahasa Indonesia
+      speechSynthesis.speak(ucapan);
+    }
+  </script>
+</body>
+</html>
